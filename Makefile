@@ -27,29 +27,24 @@ all: install
 
 install: clean uninstall
 	@mkdir app
-	qmake -o ./QMakefile SmartCalc.pro
-	make -f ./QMakefile
-	@cp ./SmartCalc.app/Contents/MacOS/SmartCalc ./app/
-	@mv ./app/ ~/Desktop/
+	cd app/ && cmake ../CMakeLists.txt && make
 
 uninstall:
-	@rm -rf ~/Desktop/app/
-	@rm -rf ./SmartCalc.app
+	@rm -rf ./app
 
 clean:
 	@rm -rf ./$(EXECUTABLE)
 	@rm -rf *.gcno *.gcda
 	@rm -rf ./report/
 	@rm -rf *.o
-	@rm -rf QMakefile .qmake.stash ui_* moc_*
-	@rm -rf ~/Desktop/SmartCalc.tar.gz ~/Desktop/SmartCalc
+	@rm -rf ~/Desktop/SmartCalc.tar.gz ~/Desktop/app
 	@rm -rf ./docs/html ./docs/latex
 
 dvi:
 	@cd docs && doxygen Doxyfile && open ./html/index.html
 
 dist: install
-	tar -cvzf ~/Desktop/SmartCalc.tar.gz ./SmartCalc.app/Contents/MacOS/SmartCalc
+	tar -cvzf ~/Desktop/SmartCalc.tar.gz ./app/SmartCalc-V2.0.app
 
 tests:
 	@$(CC) $(CFLAGS) $(SOURCE_MODEL) $(SOURCE_TEST) -lgtest -lgtest_main -o $(EXECUTABLE) && ./$(EXECUTABLE)
@@ -89,6 +84,6 @@ fsanitize:
 	@$(CC) -fsanitize=address $(CFLAGS) $(SOURCE_MODEL) $(SOURCE_TEST) -lgtest -lgtest_main -o $(EXECUTABLE) && ./$(EXECUTABLE)
 
 open:
-	@~/Desktop/app/./SmartCalc
+	@open ./app/SmartCalc-V2.0.app
 
 .PHONY: tests leaks clang-format
