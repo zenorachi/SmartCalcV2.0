@@ -13,29 +13,30 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(QT NAMES Qt6 Qt5 COMPONENTS Widgets REQUIRED)
 find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets REQUIRED)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS PrintSupport)
+
 set(PROJECT_SOURCES
-        Model/calculation.cc
-        Model/loan_calculator.cc
-        Model/polish_notation.cc
-        Model/support_methods.cc
-        Model/model.h
-        Model/s21_stack.h
+        model/calculation.cc
+        model/loan_calculator.cc
+        model/polish_notation.cc
+        model/support_methods.cc
+        model/model.h
+        model/s21_stack.h
 
-        Controller/controller.cc
-        Controller/controller.h
+        controller/controller.cc
+        controller/controller.h
 
-        View/main.cc
-        View/form.cc
-        View/loancalc.cc
-        View/plot.cc
-        View/mainwindow.cc
-        View/form.h
-        View/mainwindow.h
-        View/loancalc.h
-        View/plot.h
-        View/form.ui
-        View/plot.ui
-        View/mainwindow.ui
+        view/main.cc
+        view/form.cc
+        view/loancalc.cc
+        view/plot.cc
+        view/mainwindow.cc
+        view/form.h
+        view/mainwindow.h
+        view/loancalc.h
+        view/plot.h
+        view/form.ui
+        view/plot.ui
+        view/mainwindow.ui
 
         qcustomplot.cc
         qcustomplot.h
