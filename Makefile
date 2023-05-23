@@ -3,7 +3,7 @@ CFLAGS := -lstdc++ -std=c++17 -Wall -Werror -Wextra
 
 UNAME = $(shell uname)
 
-OPEN_REPORT :=
+OPEN :=
 LEAKS :=
 
 ifeq ($(UNAME), Linux)
@@ -84,6 +84,6 @@ fsanitize:
 	@$(CC) -fsanitize=address $(CFLAGS) $(SOURCE_MODEL) $(SOURCE_TEST) -lgtest -lgtest_main -o $(EXECUTABLE) && ./$(EXECUTABLE)
 
 open:
-	@open ./app/SmartCalc-V2.0.app
+	@$(OPEN) ./app/SmartCalc-V2.0.app
 
 .PHONY: tests leaks clang-format
