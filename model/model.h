@@ -1,3 +1,24 @@
+/*! \mainpage SmartCalc-V2.0 Documentation
+ *
+ * \section Project Description
+ * There is an implementation of calculator
+ * in the CPP programming language using structured programming.
+ * In addition to basic arithmetic operations such as add/subtract and
+ * multiply/divide, there is an ability to calculate arithmetic expressions as
+ * well as some mathematical functions (sine, cosine, logarithm, etc.). Besides
+ * calculating expressions, it also supports the use of the x variable and the
+ * graphing of the corresponding function. Also there are a credit and a deposit
+ * calculators.
+ *
+ * \section Commands
+ * Run "make" or "make all" to build the calculator.\n
+ * Run "make install" to install the application on your PC.\n
+ * Run "make uninstall" to uninstall the application.\n
+ * Run "make dvi" to get this documentation.\n
+ * Run "make dist" to archivate the application.\n
+ * Run "make tests" to run the tests.\n
+ */
+
 #ifndef CPP3_SMART_CALC_V2_0_1_SRC_MODEL_MODEL_H_
 #define CPP3_SMART_CALC_V2_0_1_SRC_MODEL_MODEL_H_
 
