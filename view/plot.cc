@@ -33,7 +33,7 @@ void Plot::OnPushButtonSetPlotClicked() noexcept {
     }
     s21::Controller controller_plot(tmp_func.toStdString());
     double result = controller_plot.GetCalculatedExpression("");
-    if (controller_plot.GetPolishBool() || std::isinf(result) || std::isnan(result)) {
+    if (controller_plot.GetPolishBool() || isinf(result) || isnan(result)) {
       ui->widget->addGraph();
       ui->widget->graph(graph_counter++)->addData(x, y);
       ui->widget->replot();
