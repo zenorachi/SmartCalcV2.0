@@ -16,7 +16,7 @@ SmartCalcV2.0 is an advanced calculator application developed using C++ and the 
 
 1. Clone the repository:
 ```sh
-git clone https://github.com/zenorachi/SmartCalcV2.0
+git clone https://github.com/zenorachi/SmartCalcV2.0.git
 ```
 2. Build and compile the project:
 ```sh
@@ -30,4 +30,9 @@ make install
 ```sh
 make open
 ```
+or
+```sh
+cd ./app && ./SmartCalcV2.0
+```
 4. Enjoy:
+![SmartCalcV2.0 Application](./images/example.jpg)

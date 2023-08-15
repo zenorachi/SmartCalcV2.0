@@ -39,6 +39,7 @@ clean:
 	@rm -rf *.o
 	@rm -rf ~/Desktop/SmartCalc.tar.gz ~/Desktop/app
 	@rm -rf ./docs/html ./docs/latex
+	@rm -rf ./app
 
 dvi:
 	@cd docs && doxygen Doxyfile && open ./html/index.html
