@@ -43,6 +43,6 @@ or
 ```sh
 cd ./app && ./SmartCalcV2.0
 ```
-4. Enjoy:
+5. Enjoy:
 
 ![SmartCalcV2.0 Application](./images/example.jpg)
