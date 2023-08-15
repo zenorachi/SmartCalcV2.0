@@ -18,7 +18,11 @@ SmartCalcV2.0 is an advanced calculator application developed using C++ and the 
 ```sh
 git clone https://github.com/zenorachi/SmartCalcV2.0.git
 ```
-2. Build and compile the project:
+2. Navigate to s21-containers:
+```sh
+cd SmartCalcV2.0:
+ ```
+3. Build and compile the project:
 ```sh
 make
 ```
@@ -26,7 +30,7 @@ or
 ```sh
 make install
 ```
-3. Open the application:
+4. Open the application:
 ```sh
 make open
 ```
@@ -35,4 +39,5 @@ or
 cd ./app && ./SmartCalcV2.0
 ```
 4. Enjoy:
+
 ![SmartCalcV2.0 Application](./images/example.jpg)
