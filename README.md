@@ -1,13 +1,33 @@
 # SmartCalcV2.0
-#### The implementation of an extended version of the standard C++ calculator using MVC pattern.
-In addition to basic arithmetic operations such as addition/subtraction and multiplication/division,
-the calculator has the ability to calculate arithmetic expressions in order,
-as well as some mathematical functions (sine, cosine, logarithm, etc.).
 
-### Commands
- * Run "make" or "make all" to build the calculator;
- * Run "make install" to install the application on your PC;
- * Run "make uninstall" to uninstall the application;
- * Run "make dvi" to get this documentation;
- * Run "make dist" to archivate the application;
- * Run "make tests" to run the tests;
+SmartCalcV2.0 is an advanced calculator application developed using C++ and the Qt framework. The project leverages the Model-View-Controller (MVC) architectural pattern and supports reverse Polish notation (RPN) for efficient and powerful mathematical calculations.
+
+## Features
+
+- Calculator functionality based on reverse Polish notation (RPN) for accurate and streamlined mathematical computations.
+
+- Utilizes the Model-View-Controller (MVC) design pattern to separate concerns and enhance maintainability and extensibility of the codebase.
+
+- User-friendly graphical interface developed using Qt, providing a seamless and intuitive experience for users.
+
+- Supports a wide range of mathematical operations, including basic arithmetic, trigonometric functions, logarithms, and more.
+
+## Installation
+
+1. Clone the repository:
+```sh
+git clone https://github.com/zenorachi/SmartCalcV2.0
+```
+2. Build and compile the project:
+```sh
+make
+```
+or
+```sh
+make install
+```
+3. Open the application:
+```sh
+make open
+```
+4. Enjoy:
