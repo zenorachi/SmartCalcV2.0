@@ -2,6 +2,10 @@
 
 SmartCalcV2.0 is an advanced calculator application developed using C++ and the Qt framework. The project leverages the Model-View-Controller (MVC) architectural pattern and supports reverse Polish notation (RPN) for efficient and powerful mathematical calculations.
 
+### Technologies used:
+* [MVC](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)
+* [Qt](https://www.qt.io/), [QCustomPlot](https://www.qcustomplot.com/)
+
 ## Features
 
 - Calculator functionality based on reverse Polish notation (RPN) for accurate and streamlined mathematical computations.
