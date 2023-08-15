@@ -5,6 +5,7 @@ SmartCalcV2.0 is an advanced calculator application developed using C++ and the 
 ### Technologies used:
 * [MVC](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)
 * [Qt](https://www.qt.io/), [QCustomPlot](https://www.qcustomplot.com/)
+* [CMake](https://cmake.org/)
 
 ## Features
 
